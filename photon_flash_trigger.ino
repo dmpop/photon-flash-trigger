@@ -28,7 +28,7 @@ void loop()
         ldrValue = analogRead(ldrPin); // read the value from the LDR
 
     if(ldrValue > ldrThreshold)
-    { // you might need to adjust the default 950 value for better results
+    {
         digitalWrite(statusPin, HIGH);
         digitalWrite(flashPin, HIGH);
         delay(10);
