@@ -3,18 +3,19 @@
     <head>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
         <meta name="viewport" content="width=device-width" />
-        <link href='http://fonts.googleapis.com/css?family=Fira+Sans&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
         <title>Flash Trigger Threshold</title>
     </head>
     <style>
-        body { font: 15px/25px 'Open Sans', sans-serif; }
+        p { font: 15px/25px 'Open Sans', sans-serif; }
         h1 { font: 25px/50% 'Quicksand', sans-serif; font-weight: 700; margin-top: 35px; margin-bottom: 35px; letter-spacing: 3px; text-transform: uppercase; color: #cc6600; }
-        #btn { width: 138px;  height: 35px; background: #3399ff; border-radius: 5px; color: #fff; font-family: "Open Sans", sans-serif; font-size: 17px; font-weight: 900; letter-spacing: 3px; text-transform: uppercase; border:none; margin-top: 25px; }
+        #btn { width: 138px;  height: 35px; background: #3399ff; border-radius: 5px; color: #fff; font-family: "Open Sans", sans-serif; font-size: 17px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; border:none; margin-top: 25px; }
     </style>
     <body>
         <center>
         <h1>Set Threshold</h1>
+        <p>Enter the desired value and press <strong>Submit</strong>.</p>
         <form action="https://api.particle.io/v1/devices/PHOTON_DEVICE_ID/setThreshold?access_token=ACCESS_TOKEN" method="POST">
             <input type="text" size="17" name="param"><br>
             <input id="btn" type="submit" value="submit">
